@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.graph-selector {
+    margin: 20px 0;
+}
+
+.graph-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
