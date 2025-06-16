@@ -4,6 +4,9 @@ import GraphSelector from "./components/GraphSelector";
 import { fetchData } from "./api";
 import PieChart from "./components/PieChart";
 
+// List your pie JSON files here
+const pieFiles = ["expensesPie.json", "incomePie.json"];
+
 const App: React.FC = () => {
   const [data, setData] = useState<any>(null);
   const [graphType, setGraphType] = useState<string>("line");
@@ -25,7 +28,8 @@ const App: React.FC = () => {
     <div className="App">
       <h1>Graphing Client</h1>
       <GraphSelector selected={selectedGraph} onChange={setSelectedGraph} />
-      {selectedGraph === "pie" && <PieChart />}
+      {selectedGraph === "pie" &&
+        pieFiles.map((file) => <PieChart key={file} filename={file} />)}
       {data && <GraphDisplay data={data} graphType={graphType} />}
     </div>
   );
