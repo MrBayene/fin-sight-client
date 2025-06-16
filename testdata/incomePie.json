@@ -1,0 +1,5 @@
+[
+  { "category": "Food", "value": 200 },
+  { "category": "Rent", "value": 800 },
+  { "category": "Utilities", "value": 150 }
+]

@@ -1,0 +1,8 @@
+[
+  { "category": "Rent", "value": 40 },
+  { "category": "Food", "value": 10 },
+  { "category": "Utilities", "value": 20 },
+  { "category": "Insurence", "value": 5 },
+  { "category": "Fun", "value": 13 },
+  { "category": "Communications", "value": 12 }
+]
